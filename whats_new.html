@@ -1,0 +1,71 @@
+<html><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Xdm.org : XDM website">
+    <title>xdm.org</title>
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <section id="footer_wrap" style="height: 30px" class="inner">
+      <!-- TODO(miraleung): Change href, add more links as needed. -->
+      <a href="xdmspec.github.io/xdm.org" style="color: #ffffff; margin-right: 30px">Home</a>
+      <!-- a href="xdmspec.github.io/xdm.org/whats_new" style="color: #ffffff; margin-right: 30px">What's New</a -->
+    </section>
+      
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <p>
+          <img align="left" src="https://raw.githubusercontent.com/xdmspec/xdm.org/master/images/xdm.png" width="250px" style="margin-bottom: 50px" alt="">
+        </p>
+        
+        <!-- Intro. -->
+        <h2 style="clear: both">Version 1.01 Released</h2>
+        <p style="clear: both">
+          Significant changes in version 1.01 include:
+        </p>
+        <ul>
+          <li>          
+            Added a <code>Profiles</code> list to <code>Device</code> to describe the intended use case of the container image
+            with the XDM metadata. For example, the XDM metadata for a depth photo is structurally different from that for 
+            virtual reality photo. This field allows an image reader to quickly identify the media type without having to 
+            parse all the metadata.
+          </li>
+          <li>
+            Added <code>Audio</code> fields (data and media type) to <code>Camera</code> that represent an audio track. 
+            An example use case is recording audio with an image, such as with virtual reality photography.
+          </li>
+          <li>
+            Deprecated the <code>ContainerSignature</code> field in <code>Device</code>, originally intended as a required 
+            field for detecting whether or not a container image was edited by a non-XDM-aware app. Computation of the 
+            signature is non-trivial, and therefore not likely to be universally implemented.
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+        <footer class="inner" style="font-size: 10pt">
+            <p class="copyright">
+                Except as otherwise noted, the content of this page is licensed under the 
+                <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 License</a>, 
+                and code samples are licensed under the 
+                <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache 2.0 License</a>.
+            </p>
+            <p class="copyright">
+                Maintained by <a href="https://github.com/xdmspec">xdmspec</a>. 
+                Published with <a href="https://pages.github.com">GitHub Pages</a>.
+            </p>
+        </footer>
+    </div>
+
+  </body>
+</html>
