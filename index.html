@@ -32,9 +32,17 @@
         <!-- Intro. -->
         <h2 style="clear: both">Extensible Device Metadata (XDM)</h2>
         <p style="clear: both">
-          The eXtensible Device Metadata (XDM) specification is a standard for storing device-related metadata
-          in common image containers such as JPEG and PNG while maintaining compatibility with existing image
-          viewers.
+            The eXtensible Device Metadata (XDM) specification is a standard for storing device-related metadata
+            in common image containers such as JPEG and PNG, while maintaining compatibility with existing image
+            viewers. The data storage format is based on the Adobe XMP standard. XDM is being developed as an open 
+            file format and is maintained on this site by a working group that includes engineers from Google and Intel. 
+        </p>
+        <p>
+            The metadata that can be stored includes depth map, point cloud, device and camera pose, lens perspective model, 
+            image reliability data, and vendor-related information about the device and sensors. The XDM specification 
+            includes support for multiple cameras, each with its own relative physical orientation. Each camera data 
+            structure can optionally contain an image, an audio track, and depth data if they can be provided by the 
+            device platform.
         </p>
 
         <!-- Example image. -->
@@ -46,12 +54,6 @@
         </p>
         <p align="center" style="margin-bottom: 40px">
           <em style="font-size: 11pt">Example: XDM can store the depth map (right) as metadata with the color image (left).</em>
-        </p>
-        <p>
-           The metadata that can be stored includes depth map, point cloud, device and camera pose, lens
-           perspective model, image reliability data, and vendor-related information about the device and
-           sensors. The data storage format is based on the Adobe XMP standard. XDM is being developed as an
-           open file format at xdm.org.
         </p>
 
         <!-- Spacing. -->
