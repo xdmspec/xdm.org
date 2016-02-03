@@ -1,33 +1,79 @@
 <!DOCTYPE html>
 <html>
-
-  <head>
-    <meta charset='utf-8'>
+<html><head>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="description" content="Xdm.org : XDM website">
+    <title>xdm.org</title>
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>xdm.org</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
 
   <body>
 
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
+      <section class="page-header">
+        <h1 class="project-name">xdm.org</h1>i
+      </section>
+
       <section id="main_content" class="inner">
-        <p><img align="left" 
-                src="https://raw.githubusercontent.com/xdmspec/xdm.org/master/images/xdm.png" 
-                width="250px"
-                style="margin-bottom: 50px" alt="">
+        <p>
+          <img align="left"
+               src="https://raw.githubusercontent.com/xdmspec/xdm.org/master/images/xdm.png"
+               width="250px" style="margin-bottom: 50px" alt="">
         </p>
+        
+        <!-- Intro -->
+        <h2 style="clear: both">Extensible Device Metadata (XDM)</h2>
         <p style="clear: both">
-          The eXtensible Device Metadata (XDM) specification is a standard for storing device-related metadata 
-          in common image containers such as JPEG and PNG while maintaining compatibility with existing image 
-          viewers. </p>
+          The eXtensible Device Metadata (XDM) specification is a standard for storing device-related metadata
+          in common image containers such as JPEG and PNG while maintaining compatibility with existing image
+          viewers.
+        </p>
+
+        <!-- Example image -->
+        <p>
+          <img align="center"
+               src="https://raw.githubusercontent.com/xdmspec/xdm.org/master/images/xdm-depth-map-with-color.png"
+              style="margin-top: 30px"
+              alt="Example: XDM can store the depth map (right) as metadata with the color image (left).">
+        </p>
+        <p style="margin-bottom: 50px">
+          <em>Example: XDM can store the depth map (right) as metadata with the color image (left).</em>
+        </p>
+        <p>
+           The metadata that can be stored includes depth map, point cloud, device and camera pose, lens
+           perspective model, image reliability data, and vendor-related information about the device and
+           sensors. The data storage format is based on the Adobe XMP standard. XDM is being developed as an
+           open file format at xdm.org.
+        </p>
+
+        <!-- Spacing -->
+        <p style="margin-bottom: 30px"></p>
+        <h3>Backwards compatibility</h3>
+        <p>
+          The eXtensible Device Metadata specification is a significant expansion of the original Depthmap
+          Metadata specification published in 2014. It still supports the original use case of a single-image
+          container with associated depth metadata, but expands that original specification to support more
+          types of metadata and more use cases.
+        </p>
+        <p>
+          Applications that supported the Depthmap Metadata spec will require modification to support XDM.
+          The items from the Depthmap Metadata standard are handled differently in XDM such as: Units,
+          Confidence, Manufacturer, Model, ImageWidth, and ImageHeight.
+        </p>
+        <p>
+          XDM supports image containers that include JPEG, PNG, TIFF, and GIF. In this documentation, JPEG is
+          used as the basic model, but the concepts generally apply to other image-file types supported by XMP.
+        </p>
       </section>
     </div>
-    
+
     <!-- TODO(miraleung): More documentation, PDF, styling. -->
 
     <!-- FOOTER  -->
@@ -37,6 +83,6 @@
         <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>
-    
+
   </body>
 </html>
