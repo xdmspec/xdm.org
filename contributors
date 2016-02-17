@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html>
 <html><head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
@@ -14,43 +16,40 @@
   <body>
     <!-- HEADER -->
     <section id="footer_wrap" style="height: 30px" class="inner">
-      <!-- TODO(miraleung): Change href, add more links as needed. -->
       <a href="index.html" style="color: #ffffff; margin-right: 30px">Home</a>
       <!-- a href="whats_new.html" style="color: #ffffff; margin-right: 30px">What's New</a -->
+      <!-- a href="link-to-pdf-here" style="color: #ffffff; margin-right: 30px">Documentation</a -->
+      <a href="whats_new.html" style="color: #ffffff; margin-right: 30px">Contributors</a>
     </section>
       
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         <p>
-          <img align="left" src="https://raw.githubusercontent.com/xdmspec/xdm.org/master/images/xdm.png" width="250px" style="margin-bottom: 50px" alt="">
+          <img align="left"
+               src="https://raw.githubusercontent.com/xdmspec/xdm.org/master/images/xdm.png"
+               width="250px" style="margin-bottom: 50px" alt="">
         </p>
         
         <!-- Intro. -->
-        <h2 style="clear: both">Version 1.01 Released</h2>
-        <p align="right" style="font-size: 11pt"><em>February 3, 2016</em></p>
+        <h2 style="clear: both">About</h2>
         <p style="clear: both">
-          Significant changes in version 1.01 include:
+            The eXtensible Device Metadata specification is maintained by the XDM working group, listed below in alphabetical order.
         </p>
         <ul>
-          <li>          
-            Added a <code>Profiles</code> list to <code>Device</code> to describe the intended use case of the container image
-            with the XDM metadata. For example, the XDM metadata for a depth photo is structurally different from that for 
-            virtual reality photo. This field allows an image reader to quickly identify the media type without having to 
-            parse all the metadata.
-          </li>
-          <li>
-            Added <code>Audio</code> fields (data and media type) to <code>Camera</code> that represent an audio track. 
-            An example use case is recording audio with an image, such as with virtual reality photography.
-          </li>
-          <li>
-            Deprecated the <code>ContainerSignature</code> field in <code>Device</code>, originally intended as a required 
-            field for detecting whether or not a container image was edited by a non-XDM-aware app. Computation of the 
-            signature is non-trivial, and therefore not likely to be universally implemented.
-          </li>
+          <li>Houman Alagha, Intel Corp.</li>
+          <li>Jim Foley, Google Inc.</li>
+          <li>Carlos Hernández, Google Inc.</li>
+          <li>Rohit Israni, Intel Corp.</li>
+          <li>Mira Leung, Google Inc.</li>
         </ul>
+        <p>
+          Questions or comments? Contact us <a href="mailto:xdmspec@gmail.com">here</a>.
+        </p>
       </section>
     </div>
+
+    <!-- TODO(miraleung): PDF link here. -->
 
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
