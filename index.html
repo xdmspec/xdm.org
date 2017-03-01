@@ -17,7 +17,7 @@
     <!-- HEADER -->
     <section id="footer_wrap" style="height: 30px" class="inner">
       <a href="index.html" style="color: #ffffff; margin-right: 30px">Home</a>
-      <a href="https://github.com/xdmspec/xdm.org/blob/gh-pages/ExtensibleDeviceMetadataXDM_v1.01.pdf" 
+      <a href="https://github.com/xdmspec/xdm.org/blob/gh-pages/ExtensibleDeviceMetadataXDM_v1.02.pdf" 
          style="color: #ffffff; margin-right: 30px">
            Specification
       </a>
@@ -45,12 +45,17 @@
         </p>
         <p>
             The metadata that can be stored includes <a href="http://en.wikipedia.org/wiki/Depth_map">depth map</a>,
-            <a href="http://en.wikipedia.org/wiki/Point_cloud">point cloud</a>, device and camera
+            <a href="http://en.wikipedia.org/wiki/Point_cloud">point cloud</a>, 
+            <a href="https://en.wikipedia.org/wiki/Triangle_mesh">mesh</a>,
+            <a href="https://en.wikipedia.org/wiki/Directed_graph">connectivity</a>, device and camera
             <a href="http://en.wikipedia.org/wiki/Pose_(computer_vision)">pose</a>, lens perspective model,
             image reliability data, and vendor-related information about the device and sensors. The XDM specification
             includes support for multiple cameras, each with its own relative physical orientation. Each camera data
             structure can optionally contain an image, an audio track, and depth data if they can be provided by the
             device platform.
+        </p>
+        <p>
+            As of version 1.01, XDM supports a variety of use cases including depth photography, VR, and 360 photography.
         </p>
 
         <!-- Example image. -->
@@ -61,7 +66,7 @@
               alt="Example: XDM can store the depth map (right) as metadata with the color image (left).">
         </p>
         <p align="center" style="margin-bottom: 40px">
-          <em style="font-size: 11pt">Example: XDM can store the depth map (right) as metadata with the color image (left).</em>
+          <em style="font-size: 11pt">Example: XDM can enhance a standard image (left) with a depth map (right) as metadata.</em>
         </p>
 
         <!-- Spacing. -->
